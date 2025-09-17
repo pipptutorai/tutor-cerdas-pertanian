@@ -1,0 +1,23 @@
+# Node/Vite
+node_modules
+dist
+*.log
+npm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+# Env & secrets
+.env
+.env.local
+apps/*/.env
+apps/*/.env.local
+
+# Editor/OS
+.DS_Store
+.vscode
+.idea
+
+# Build artefacts
+dist
+apps/*/node_modules
+apps/web/dist

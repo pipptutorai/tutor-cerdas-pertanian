@@ -1,0 +1,12 @@
+{
+  "name": "tutor-cerdas",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n WEB,API -c auto \"npm run dev --prefix tutor-cerdas/apps/web\" \"npm run dev --prefix tutor-cerdas/apps/api\"",
+    "build": "npm run build --prefix tutor-cerdas/apps/web && echo \"(API no build)\"",
+    "start": "npm run preview --prefix tutor-cerdas/apps/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
